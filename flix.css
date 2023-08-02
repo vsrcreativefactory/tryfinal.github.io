@@ -1,0 +1,231 @@
+body{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    height: 800px;
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(media/IN-en-20230724-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+   background-size: cover;
+   background-position: center;
+   padding: 10px 0%;
+   position: relative;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    display: flex;
+}
+.logo {
+    width: 150px;
+    height: 150p;
+    cursor: pointer;
+    padding-left: 166px;
+  }
+.eng{
+    background-color: black;
+    color: white;
+    height: 32px;
+    width: 88px;
+    border-color: white;
+    padding-left: 0px;
+  }
+.sigin{
+    height: 32px;
+    width: 88px;
+    background-color:#db0001 ;
+    color: white;
+    cursor: pointer;
+    padding-left: 0px;
+}
+.sigin:hover{
+    background-color: #bd0d0d;
+}
+.front{
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    text-align: center;
+    margin-top: 11px;
+    
+}
+.front h1{
+    font-size: 3rem;
+}
+.front h3{
+    font-size: 1.5rem;;
+}
+.front p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+.front input{
+    font-size: 2rem;
+    transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
+
+}
+.front button{
+    width: 157px;
+    height: 46px;
+    padding: 20px;
+    cursor: pointer;
+    background-color:red;
+    color: white;
+    text-align: center;
+    
+}
+.emailred{
+background-color:transparent;
+margin: 12px;
+padding: 5px;
+width: 430px;
+height: 46px;
+overflow: hidden;
+}
+.front button:hover{
+    background-color: #bd0d0d;
+}
+/*...................................................*/
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    border-top:7px solid #333;
+
+}
+.texts{
+    margin-bottom: 20px;
+    flex-basis: 50%;
+    
+}
+.image1{
+    margin-bottom: 20px;
+    flex-basis: 50%;
+}
+.image1 img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h1{
+   font-size: 50px; 
+   margin-bottom:20px ;
+}
+/*...................................*/
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h1{
+    font-weight: 800;
+    font-size: 50px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    list-style: none;
+    
+}
+.accordion li{
+    width: 100%;
+    padding: 5px;
+
+}
+.accordion li label{
+display: flex;
+align-items: center;
+padding: 20px;
+font-size: 18px;
+font-weight: 500;
+background-color: #303030;
+margin-bottom: 2px;
+cursor: pointer;
+position:relative
+}
+
+input[type="radio"]{
+    display: none;
+}
+.content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    padding: 30px 20px;
+    max-height: 600px;
+    
+}
+.accordion input[type="radio"]:checked + label::after{
+transform: rotate(135deg);
+}
+.emailred2{
+    background-color:transparent;
+    margin: 12px;
+    padding: 5px;
+    width: 430px;
+    height: 46px;
+    overflow: hidden;
+}
+.emailred2-button{
+    width: 157px;
+    height: 46px;
+    padding: 15px;
+    cursor: pointer;
+    background-color:red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: -8px;
+}
+.emailred2-button:hover{
+background-color: #bd0d0d;
+}
+/*..........................*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top:7px solid #333;
+
+    color: #777;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
